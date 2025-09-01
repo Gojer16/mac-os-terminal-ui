@@ -8,8 +8,9 @@ No npm package needed — just copy the component into your project and start us
 ---
 
 ## 🚀 Demo
+<img width="914" height="632" alt="image" src="https://github.com/user-attachments/assets/aafaf02d-6896-45c5-a1ee-f5207431ee6c" />
 
-![Demo Screenshot]()  
+![Demo Screenshot](<img width="928" height="898" alt="image" src="https://github.com/user-attachments/assets/427d5524-0833-4569-9ab0-85a76d8ab79b" />)  
 
 ---
 
