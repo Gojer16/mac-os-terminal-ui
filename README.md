@@ -9,8 +9,7 @@ No npm package needed — just copy the component into your project and start us
 
 ## 🚀 Demo
 
-![Demo Screenshot](./screenshot.png)  
-*(add a screenshot or GIF of your terminal in action)*
+![Demo Screenshot]()  
 
 ---
 
@@ -18,9 +17,6 @@ No npm package needed — just copy the component into your project and start us
 
 1. Copy [`Terminal.jsx`](./components/Terminal.jsx) into your `components/` folder.
 2. Import and use it like a normal React component:
-
-
-
 
 ```jsx
 import Terminal from "./components/Terminal";
@@ -34,7 +30,7 @@ export default function App() {
     "> mission",
     '"Build efficient, secure, and scalable solutions that matter."',
     "> stack",
-    "JavaScript | Express | Python | FastAPI | React.js | MySQL | MongoDB | Redis | Docker ",
+    "JavaScript | Express | Python | FastAPI | React.js ",
     "> values",
     "Simplicity. Reliability. Curiosity. Impact. Growth.",
   ];
@@ -55,43 +51,24 @@ export default function App() {
   );
 }
 ```
-⚙️ Props
-Prop	Type	Default	Description
-lines	string[] OR { prompt, output }[]	—	(required) The text lines to render. Each entry can be a string or an object with prompt and output properties
-loop	boolean	false	If true, the terminal restarts from the first line after finishing
-withDeleteEffect	boolean	true	If true, text is "deleted" before typing the next line
-typingSpeed	number (ms)	50	Delay between typing each character (smaller = faster)
-deleteSpeed	number (ms)	25	Delay between deleting each character (smaller = faster)
-pauseBeforeDelete	number (ms)	1000	How long to wait after typing before deletion starts
-pauseBeforeNextLine	number (ms)	2000	How long to wait before moving to the next line when deletion is disabled
-terminalStyle	"mac" | "hacker" | "light"	"mac"	Predefined visual themes for the terminal
-fontSize	string	"text-sm"	Font size of the terminal content (Tailwind classes)
-className	string	""	Additional classes to customize container styl
 
-🎨 Themes
-mac: macOS-style window with traffic lights and dark background
+# 🎨 Themes
+* **mac:** macOS-style window with traffic lights and dark background.
+* **hacker:** Black/green terminal with glowing effect.
+* **light:** Light-mode terminal with white background.
 
-hacker: Black/green terminal with glowing effect
+# 🕹️ Interaction
+* **Drag:** Click and drag the top bar to move the terminal.
+* **Resize:** Use the handle in the bottom-right corner to resize the window.
+* **Responsive:** Content area automatically becomes scrollable when window is too small.
 
-light: Light-mode terminal with white background
-
-🕹️ Interaction
-Drag: Click and drag the top bar to move the terminal
-
-Resize: Use the handle in the bottom-right corner to resize the window
-
-Responsive: Content area automatically becomes scrollable when window is too small
-
-🛠️ Customization
+# 🛠️ Customization
 You can extend the component by:
+* Adding new themes to the themes object.
+* Customizing the styling with Tailwind classes via the className prop.
+* Adjusting animation speeds to create faster or more deliberate typing effects.
 
-Adding new themes to the themes object
-
-Customizing the styling with Tailwind classes via the className prop
-
-Adjusting animation speeds to create faster or more deliberate typing effects
-
-📝 Example Content
+# 📝 Example Content
 
 ```
 const terminalLines = [
@@ -108,8 +85,8 @@ const terminalLines = [
 ];
 ```
 
-📄 License
+# 📄 License
 This component is free to use in personal and commercial projects.
 
-🤝 Contributing
+# 🤝 Contributing
 Feel free to submit issues and enhancement requests!
